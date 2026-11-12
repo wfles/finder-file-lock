@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.cache/
+dist/
+build/
+*.pkg
+*.log
+permissions-password
+installation-state.plist

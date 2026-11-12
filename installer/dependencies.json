@@ -1,0 +1,42 @@
+[
+  {
+    "name": "qpdf-12.4.2-bin-macos-arm64.zip",
+    "url": "https://github.com/qpdf/qpdf/releases/download/v12.4.2/qpdf-12.4.2-bin-macos-arm64.zip",
+    "sha256": "62e46987a30ea167cbc530ccb22690aec3d8c812ed09979a941bcee92e504b79"
+  },
+  {
+    "name": "qpdf-12.4.2-bin-macos-x86_64.zip",
+    "url": "https://github.com/qpdf/qpdf/releases/download/v12.4.2/qpdf-12.4.2-bin-macos-x86_64.zip",
+    "sha256": "dd3b01f4414d198529bb0f13bba59c2f016a328bb3506695087a96fb80fc1481"
+  },
+  {
+    "name": "cpython-3.13.18+20261110-aarch64-apple-darwin-install_only_stripped.tar.gz",
+    "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261110/cpython-3.13.18%2B20261110-aarch64-apple-darwin-install_only_stripped.tar.gz",
+    "sha256": "7a2384641584ab9984221fcb0fc9265df465922af71be71410529e2a9c3f0540"
+  },
+  {
+    "name": "cpython-3.13.18+20261110-x86_64-apple-darwin-install_only_stripped.tar.gz",
+    "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261110/cpython-3.13.18%2B20261110-x86_64-apple-darwin-install_only_stripped.tar.gz",
+    "sha256": "d27d59a722db9f69926eb6d9564071247221f45a04da920ea7f3001c97e32f9b"
+  },
+  {
+    "name": "lxml-6.1.1-cp313-cp313-macosx_10_13_universal2.whl",
+    "url": "https://files.pythonhosted.org/packages/a5/eb/7e6f37c5584ccbb2ff267f56fd0339016938c1c8684cfefab9b33ffc2f36/lxml-6.1.1-cp313-cp313-macosx_10_13_universal2.whl",
+    "sha256": "68a9198d0fc122d14bb76837de9aa80cf84caed990b5b237f532ed87d3706736"
+  },
+  {
+    "name": "python-full-arm64.tar.zst",
+    "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261110/cpython-3.13.18%2B20261110-aarch64-apple-darwin-pgo%2Blto-full.tar.zst",
+    "sha256": "11c316dfa24e1184e91de3c1434ed1d3e986c30b2d7a0273257067efe611a677"
+  },
+  {
+    "name": "qpdf-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/qpdf/qpdf/v12.4.2/LICENSE.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "name": "qpdf-Artistic-2.0",
+    "url": "https://raw.githubusercontent.com/qpdf/qpdf/v12.4.2/Artistic-2.0",
+    "sha256": "fb929ac30decb4dc3a2eea2bec6c43296a797c5d2d602deb3784ee39430583d5"
+  }
+]

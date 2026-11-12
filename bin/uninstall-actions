@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+
+ROOT=$(cd "$(/usr/bin/dirname "$0")/.." && pwd -P)
+ARCH=$(/usr/bin/uname -m)
+exec "$ROOT/runtime/$ARCH/python/bin/python3.13" -EsB "$ROOT/actions/install_workflows.py" --uninstall

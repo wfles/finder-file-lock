@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+ROOT=$(cd "$(dirname "$0")/.." && pwd -P)
+case "${1:-}" in
+  lock)   ACTION=lock_file.py ;;
+  unlock) ACTION=unlock_document.py ;;
+  *) exit 64 ;;
+esac
+shift
+ARCH=$(/usr/bin/uname -m)
+exec "$ROOT/runtime/$ARCH/python/bin/python3.13" -EsB "$ROOT/actions/$ACTION" "$@"

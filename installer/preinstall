@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+
+if [ "$2" != "$HOME/Library/Application Support/FinderFileLock" ] || [ "$(/usr/bin/id -u)" -eq 0 ]; then
+    echo '请选择安装到当前账户。' >&2
+    exit 1
+fi
+
+for action in '文件加锁' '解除编辑限制'; do
+    workflow="$HOME/Library/Services/$action.workflow"
+    if [ -e "$workflow" ] || [ -L "$workflow" ]; then
+        owner=$(/usr/bin/plutil -extract FinderFileLockOwner raw -expect string -o - "$workflow/Contents/Info.plist" 2>/dev/null) || owner=''
+        if [ -L "$workflow" ] || [ "$owner" != 'io.github.wfles.finder-file-lock' ]; then
+            echo "已有同名快速操作「$action」。请保留或移开旧工作流后再安装。" >&2
+            exit 1
+        fi
+    fi
+done
